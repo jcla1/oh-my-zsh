@@ -27,3 +27,4 @@
         autocorrect = 1
 [push]
 	default = simple
+    autocorrect = 1
