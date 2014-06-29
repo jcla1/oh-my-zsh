@@ -1,14 +1,5 @@
-rb_prompt(){
-  if $(which rbenv &> /dev/null)
-  then
-    echo "%{$fg_bold[yellow]%}$(rbenv version | awk '{print $1}')%{$reset_color%}"
-  else
-    echo ""
-  fi
-}
-
 directory_name(){
-  echo "%{$fg_bold[cyan]%}%1/%\/%{$reset_color%}"
+  echo "%{$fg_bold[blue]%}%1/%\/%{$reset_color%}"
 }
 
 git_dirty() {
@@ -39,7 +30,7 @@ need_push () {
   fi
 }
 
-export PROMPT=$'\n$(rb_prompt) in $(directory_name) $(git_dirty)$(need_push)\n› '
+export PROMPT=$'\n%{$fg_bold[red]%}%m%{$reset_color%} in $(directory_name) $(git_dirty)$(need_push)\n› '
 
 ZSH_THEME_GIT_PROMPT_PREFIX=""
 ZSH_THEME_GIT_PROMPT_SUFFIX=""

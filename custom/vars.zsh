@@ -20,13 +20,12 @@ unalias hls &> /dev/null
 alias hls="fs -ls"
 
 # Path
-export PATH="/Applications/Sublime Text.app/Contents/SharedSupport/bin:$PATH"
 export PATH="$GOPATH/bin:$PATH"
 export PATH="/Applications/Octave.app/Contents/Resources/bin:$PATH"
-export PATH="$HOME/.rbenv/shims:$PATH"
 export PATH="/usr/local/bin:$PATH"
 export PATH="/usr/local/sbin:$PATH"
 export PATH="$ZSH/custom/bin:$PATH"
+export PATH="$HOME/data/bin:$PATH"
 
 # Aliases
 alias r="source ~/.zshrc"
