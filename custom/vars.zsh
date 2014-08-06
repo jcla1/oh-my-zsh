@@ -1,5 +1,5 @@
 # Editor
-export EDITOR="subl"
+export EDITOR="vim"
 
 # Golang
 export GOPATH="$HOME/data/gocode"
@@ -26,6 +26,7 @@ export PATH="/usr/local/bin:$PATH"
 export PATH="/usr/local/sbin:$PATH"
 export PATH="$ZSH/custom/bin:$PATH"
 export PATH="$HOME/data/bin:$PATH"
+export PATH="$HOME/.cabal/bin:$PATH"
 
 # Aliases
 alias r="source ~/.zshrc"
