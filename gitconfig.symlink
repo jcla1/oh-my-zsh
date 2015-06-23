@@ -28,3 +28,5 @@
 [push]
 	default = simple
     autocorrect = 1
+[status]
+	short = true
